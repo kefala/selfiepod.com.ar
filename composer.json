@@ -1,0 +1,24 @@
+{
+    "name": "sarasa/sarasa",
+    "type": "php-framework",
+    "description": "PHP Core Framework for PHP 5.3",
+    "keywords": ["framework"],
+    "homepage": "http://github.com/joacodeviaje/sarasa",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joaquín Miguez",
+            "email": "joacodeviaje@gmail.com",
+            "homepage": "http://github.com/joacodeviaje",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "sarasa/core"   : "0.2.*",
+        "geoip2/geoip2" : "0.5.*"
+
+    },
+    "autoload": {
+        "psr-0": {"": "app/"}
+    }
+}

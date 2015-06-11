@@ -1,1 +1,12 @@
+error_log
+*~
+*.tpl.php
+*.sublime-project
+*.sublime-workspace
+config.json
 logs/
+tmp/
+vendor/sarasa/compile/
+.idea/
+res/
+tmp/
