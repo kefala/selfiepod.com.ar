@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="boceto/assets/css/main.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="boceto/assets/css/ie8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="boceto/assets/css/ie9.css" /><![endif]-->
-
+        <meta name="google-site-verification" content="JIbbVbemtED2cE980diwjhoU24cCnCt7c5bQd7tzwjc" />
         {foreach from=$sarasa.css item="css"}
         <link rel="stylesheet" type="text/css"  href="/css/{$css}" media="screen" />
         {/foreach}
