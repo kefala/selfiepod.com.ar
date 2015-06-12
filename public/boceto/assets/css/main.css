@@ -3447,5 +3447,13 @@
 				background-size: contain;
 				opacity: 0.65;
 			}
+			#one .content {
+				text-align: left;
+				padding: 30px;
+			}
+			#two .content p, #three .content p, #four .content p{
+				text-align: left;		
+			}
+
 
 	}
