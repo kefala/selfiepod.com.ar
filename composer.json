@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "sarasa/core"   : "0.2.*",
+        "sarasa/core" : "0.3.*",
         "geoip2/geoip2" : "0.5.*"
 
     },

@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+    Big Picture by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -8,56 +13,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{$sarasa.title}</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/vendor/bootstrap-responsive.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="boceto/assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="boceto/assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="boceto/assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="boceto/assets/css/ie9.css" /><![endif]-->
+
         {foreach from=$sarasa.css item="css"}
         <link rel="stylesheet" type="text/css"  href="/css/{$css}" media="screen" />
         {/foreach}
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div id="loading">Loading...</div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container">
-        {block name="container"}{/block}
-        </div>
         
-        <div id="dialogcontainer" >
+        {block name="container"}{/block}
+        
+        
 
-            <div id="dlgError" title="Error">
-                <div id="dlgErrorMsg"></div>
-            </div>
-
-            {block name="dialogs"}{/block}
-            
-        </div>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-ui-1.10.3.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
+        
+        <script src="boceto/assets/js/jquery.min.js"></script>
+        <script src="boceto/assets/js/jquery.poptrox.min.js"></script>
+        <script src="boceto/assets/js/jquery.scrolly.min.js"></script>
+        <script src="boceto/assets/js/jquery.scrollex.min.js"></script>
+        <script src="boceto/assets/js/skel.min.js"></script>
+        <script src="boceto/assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="boceto/assets/js/ie/respond.min.js"></script><![endif]-->
         {foreach from=$sarasa.js item="js"}
-        <script src="/js/{$js}"></script>
+            <script src="/js/{$js}"></script>
         {/foreach}
+
         {block name=scripts}{/block}
+        <script src="boceto/assets/js/main.js"></script>
 
-        {*<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>*}
 
-        {if $sarasa.development}{include file="Sarasa/Views/debugbar.tpl"}{/if}
+
+        {***if $sarasa.development}{include file="Sarasa/Views/debugbar.tpl"}{/if***}
 
     </body>
 </html>

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "175d7be19a44a511380c5c0c05518eec",
+    "hash": "c41889b20278533b552212f4ed137440",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -894,16 +894,16 @@
         },
         {
             "name": "sarasa/core",
-            "version": "v0.2.21",
+            "version": "v0.3.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joacodeviaje/sarasa-core.git",
-                "reference": "d7e321a69ea5ba985b6df16f8df325c6dbca27ab"
+                "reference": "e67220f9b1bd1a5a61bee9d9af749bde7edb56d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joacodeviaje/sarasa-core/zipball/d7e321a69ea5ba985b6df16f8df325c6dbca27ab",
-                "reference": "d7e321a69ea5ba985b6df16f8df325c6dbca27ab",
+                "url": "https://api.github.com/repos/joacodeviaje/sarasa-core/zipball/e67220f9b1bd1a5a61bee9d9af749bde7edb56d5",
+                "reference": "e67220f9b1bd1a5a61bee9d9af749bde7edb56d5",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
                 "pagerfanta/pagerfanta": "v1.0.0",
                 "php": ">=5.3.0",
                 "psr/log": "1.0.0",
-                "smarty/smarty": "3.1.13",
+                "smarty/smarty": "3.1.*",
                 "symfony/console": "v2.2.1"
             },
             "type": "php",
@@ -938,20 +938,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-10-22 13:21:19"
+            "time": "2014-12-07 13:56:45"
         },
         {
             "name": "smarty/smarty",
-            "version": "v3.1.13",
+            "version": "v3.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "7b2a2c4a883ba745759fb5db26ab8134a5ae282b"
+                "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/7b2a2c4a883ba745759fb5db26ab8134a5ae282b",
-                "reference": "7b2a2c4a883ba745759fb5db26ab8134a5ae282b",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b58771e31b11c721f6aa8e574e16e4058f9edc5f",
+                "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f",
                 "shasum": ""
             },
             "require": {
@@ -967,7 +967,7 @@
                 "classmap": [
                     "libs/Smarty.class.php",
                     "libs/SmartyBC.class.php",
-                    "libs/sysplugins/smarty_security.php"
+                    "libs/sysplugins/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -993,7 +993,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-31 00:47:26"
+            "time": "2015-05-23 17:22:14"
         },
         {
             "name": "symfony/console",
@@ -1046,16 +1046,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "687039686d0e923429ba6e958d0baa920cd5d458"
+                "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/687039686d0e923429ba6e958d0baa920cd5d458",
-                "reference": "687039686d0e923429ba6e958d0baa920cd5d458",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+                "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
                 "shasum": ""
             },
             "require": {
@@ -1100,7 +1100,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-02 15:21:08"
+            "time": "2015-06-08 09:37:21"
         }
     ],
     "packages-dev": [],

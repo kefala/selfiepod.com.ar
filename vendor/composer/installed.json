@@ -47,66 +47,6 @@
         ]
     },
     {
-        "name": "symfony/event-dispatcher",
-        "version": "v2.7.0",
-        "version_normalized": "2.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "687039686d0e923429ba6e958d0baa920cd5d458"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/687039686d0e923429ba6e958d0baa920cd5d458",
-            "reference": "687039686d0e923429ba6e958d0baa920cd5d458",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.0,>=2.0.5",
-            "symfony/dependency-injection": "~2.6",
-            "symfony/expression-language": "~2.6",
-            "symfony/phpunit-bridge": "~2.7",
-            "symfony/stopwatch": "~2.3"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2015-05-02 15:21:08",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "guzzle/guzzle",
         "version": "v3.9.3",
         "version_normalized": "3.9.3.0",
@@ -472,63 +412,6 @@
         ],
         "description": "Symfony Console Component",
         "homepage": "http://symfony.com"
-    },
-    {
-        "name": "smarty/smarty",
-        "version": "v3.1.13",
-        "version_normalized": "3.1.13.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/smarty-php/smarty.git",
-            "reference": "7b2a2c4a883ba745759fb5db26ab8134a5ae282b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/smarty-php/smarty/zipball/7b2a2c4a883ba745759fb5db26ab8134a5ae282b",
-            "reference": "7b2a2c4a883ba745759fb5db26ab8134a5ae282b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2"
-        },
-        "time": "2014-10-31 00:47:26",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "libs/Smarty.class.php",
-                "libs/SmartyBC.class.php",
-                "libs/sysplugins/smarty_security.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL-3.0"
-        ],
-        "authors": [
-            {
-                "name": "Monte Ohrt",
-                "email": "monte@ohrt.com"
-            },
-            {
-                "name": "Uwe Tews",
-                "email": "uwe.tews@googlemail.com"
-            },
-            {
-                "name": "Rodney Rehm",
-                "email": "rodney.rehm@medialize.de"
-            }
-        ],
-        "description": "Smarty - the compiling PHP template engine",
-        "homepage": "http://www.smarty.net",
-        "keywords": [
-            "templating"
-        ]
     },
     {
         "name": "doctrine/lexer",
@@ -1082,18 +965,75 @@
         ]
     },
     {
-        "name": "sarasa/core",
-        "version": "v0.2.21",
-        "version_normalized": "0.2.21.0",
+        "name": "smarty/smarty",
+        "version": "v3.1.24",
+        "version_normalized": "3.1.24.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/joacodeviaje/sarasa-core.git",
-            "reference": "d7e321a69ea5ba985b6df16f8df325c6dbca27ab"
+            "url": "https://github.com/smarty-php/smarty.git",
+            "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/joacodeviaje/sarasa-core/zipball/d7e321a69ea5ba985b6df16f8df325c6dbca27ab",
-            "reference": "d7e321a69ea5ba985b6df16f8df325c6dbca27ab",
+            "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b58771e31b11c721f6aa8e574e16e4058f9edc5f",
+            "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2015-05-23 17:22:14",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "libs/Smarty.class.php",
+                "libs/SmartyBC.class.php",
+                "libs/sysplugins/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Monte Ohrt",
+                "email": "monte@ohrt.com"
+            },
+            {
+                "name": "Uwe Tews",
+                "email": "uwe.tews@googlemail.com"
+            },
+            {
+                "name": "Rodney Rehm",
+                "email": "rodney.rehm@medialize.de"
+            }
+        ],
+        "description": "Smarty - the compiling PHP template engine",
+        "homepage": "http://www.smarty.net",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "sarasa/core",
+        "version": "v0.3.14",
+        "version_normalized": "0.3.14.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/joacodeviaje/sarasa-core.git",
+            "reference": "e67220f9b1bd1a5a61bee9d9af749bde7edb56d5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/joacodeviaje/sarasa-core/zipball/e67220f9b1bd1a5a61bee9d9af749bde7edb56d5",
+            "reference": "e67220f9b1bd1a5a61bee9d9af749bde7edb56d5",
             "shasum": ""
         },
         "require": {
@@ -1102,10 +1042,10 @@
             "pagerfanta/pagerfanta": "v1.0.0",
             "php": ">=5.3.0",
             "psr/log": "1.0.0",
-            "smarty/smarty": "3.1.13",
+            "smarty/smarty": "3.1.*",
             "symfony/console": "v2.2.1"
         },
-        "time": "2013-10-22 13:21:19",
+        "time": "2014-12-07 13:56:45",
         "type": "php",
         "installation-source": "dist",
         "autoload": {
@@ -1130,5 +1070,65 @@
         "keywords": [
             "framework"
         ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/EventDispatcher.git",
+            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.0,>=2.0.5",
+            "symfony/dependency-injection": "~2.6",
+            "symfony/expression-language": "~2.6",
+            "symfony/phpunit-bridge": "~2.7",
+            "symfony/stopwatch": "~2.3"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2015-06-08 09:37:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
     }
 ]

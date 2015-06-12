@@ -16,10 +16,10 @@ class Template extends \Smarty
     public function __construct($full = true)
     {
         parent::__construct();
-
-        $this->setTemplateDir('../app');
-        $this->setCompileDir('../vendor/sarasa/compile/templates');
-        $this->setCacheDir('../vendor/sarasa/compile/cache');
+        
+        $this->setTemplateDir(__DIR__ . '/../../../../../../app');
+        $this->setCompileDir(__DIR__ . '/../../../../compile/templates');
+        $this->setCacheDir(__DIR__ . '/../../../../compile/cache');
         
         $this->registerPlugin("function", "url", array($this, 'url'));
 
@@ -68,9 +68,11 @@ class Template extends \Smarty
 
     public function isCached($template = null, $cache_id = null, $compile_id = null, $parent = null)
     {
-        if (substr($template, 0, 1) != '/') {
+        $slashcount = substr_count($template, '/');
+
+        if (substr($template, 0, 1) != '/' && $slashcount < 2) {
             $template = FrontController::$bundle . '/Views/' . $template;
-        } else {
+        } elseif ($slashcount < 2) {
             $template = 'Sarasa/Views/' . substr($template, 1);
         }
 
@@ -105,7 +107,7 @@ class Template extends \Smarty
         return self::getUrl($parameters['name'], $parameters);
     }
 
-    public static function getUrl($module, $parameters = array(), $method = 'get')
+    public static function getUrl($module, $parameters = array(), $method = 'get', $domain = null)
     {
         $file = $_SERVER['DOCUMENT_ROOT'] . "/../routing.json";
         if (!is_file($file)) {
@@ -126,17 +128,11 @@ class Template extends \Smarty
             $j = 0;
             $map = true;
             $ruta_variables = array();
-            $ruta_method = isset($ruta['method']) ? $ruta['method'] : 'get';
-            if (!isset($_SERVER['REQUEST_METHOD'])) {
-                $_SERVER['REQUEST_METHOD'] = 'GET';
-            }
-            if (!isset($_SERVER['HTTP_AJAX_FUNCTION']) && strtolower($ruta_method) != strtolower($_SERVER['REQUEST_METHOD'])) {
-                continue;
-            }
             
             //Llama a otro routing.json interno
             if (!isset($ruta['url'])) {
-                $file = $_SERVER['DOCUMENT_ROOT'] . "/../app/" . $ruta['bundle'] . "/routing.json";
+                $router = (isset($ruta['router']) ? $ruta['router'] : 'routing') . '.json';
+                $file = $_SERVER['DOCUMENT_ROOT'] . "/../app/" . $ruta['bundle'] . "/" . $router;
                 $prefix = $ruta['prefix'] ? $ruta['prefix'] : '';
                 while (substr($prefix, -1) == '/') {
                     $prefix = substr($prefix, 0, -1);
@@ -167,15 +163,21 @@ class Template extends \Smarty
                 array_walk($search, 'self::addDots');
                 $url = str_replace($search, $parameters, $url);
 
-                if (!isset($_SERVER['SERVER_NAME'])) {
-                    $_SERVER['SERVER_NAME'] = str_replace(array('http://', 'https://'), '', FrontController::config('domain'));
+                if ($domain) {
+                    $domain = str_replace(array('http://', 'https://'), '', $domain);
+                } else {
+                    if (!isset($_SERVER['SERVER_NAME'])) {
+                        $domain = str_replace(array('http://', 'https://'), '', FrontController::config('domain'));
+                    } else {
+                        $domain = $_SERVER['SERVER_NAME'];
+                    }
                 }
 
                 while (substr($url, -1) == '/') {
                     $url = substr($url, 0, -1);
                 }
 
-                return 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['SERVER_NAME'] . FrontController::config('preurl') . $url;
+                return 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $domain . FrontController::config('preurl') . $url;
             }
         }
     }
@@ -210,11 +212,11 @@ class Template extends \Smarty
         header("HTTP/1.1 500 Internal Server Error");
         $smarty = new \Sarasa\Models\Template();
 
-        if ($e && !FrontController::config('production')) {
+        if ($e && !\Sarasa\Core\FrontController::config('production')) {
             $err = $e->getMessage();
         }
         
-        $smarty->title(Lang::_('El sitio se encuentra en mantenimiento'));
+        $smarty->title('El sitio se encuentra en mantenimiento');
         $smarty->assign('noindex', true);
         if (isset($err)) {
             $smarty->assign('err', $err);
