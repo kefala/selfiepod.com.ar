@@ -132,7 +132,7 @@
 					<div class="box container 75%">
 
 					<!-- Contact Form -->
-							<form method="post" action="#">
+							<form method="post" action="javascript:void(0)">
 								<div class="row 50%">
 									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Nombre" /></div>
 									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
@@ -158,12 +158,12 @@
 
 				<!-- Icons -->
 					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="javascript:void(0)" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 
 				<!-- Menu -->
