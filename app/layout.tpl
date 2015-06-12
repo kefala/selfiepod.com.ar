@@ -12,7 +12,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{$sarasa.title}</title>
-        <meta name="description" content="">
+        <meta name="description" content="Ahora, tomá tus selfies a distancia gracias a este diseño simple, económico y compatible con todos los celulares.">
+        <meta name="keywords" content="Selfie Pod, Palo de Selfie, Bastón de Selfie, Selfie, Foto, Celular, Resistente al agua, Durable, Resistente a golpes, Liviano, Económico, Compatible con todos los celulares, Fácil de guardar, Brilla en la oscuridad">
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="boceto/assets/js/ie/html5shiv.js"></script><![endif]-->

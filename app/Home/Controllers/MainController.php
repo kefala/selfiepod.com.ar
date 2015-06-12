@@ -11,7 +11,7 @@ class MainController extends \Sarasa\Models\MainController
         $em = $this->getEntityManager();
         $template = new Template();
 
-        $template->title('Home');
+        $template->title('Inicio');
         $template->display('main.tpl');
     }
 }
