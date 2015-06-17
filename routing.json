@@ -7,5 +7,10 @@
 		"url"       : "",
 		"bundle"    : "Home",
 		"controller": "Main"
+	},
+	"test": {
+		"url"       : "test",
+		"bundle"    : "Home",
+		"controller": "Test"
 	}
 }
