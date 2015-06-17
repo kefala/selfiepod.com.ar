@@ -17,10 +17,7 @@ class MainController extends \Sarasa\Models\MainController
     public function sendForm(&$objResponse, $parameters)
     {
 
-    	$objResponse->log($parameters['name']);
-
-
-
+    	
         $destinatario =  "matin.g.lobo@gmail.com" ; 
         $asunto = "Contacto vía Web"; 
         $cuerpo = ' 
@@ -58,7 +55,7 @@ class MainController extends \Sarasa\Models\MainController
         */
 
 
-        mail($destinatario,$asunto,$cuerpo,$headers) 
+        mail($destinatario,$asunto,$cuerpo,$headers);
 
     
 
