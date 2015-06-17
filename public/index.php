@@ -31,7 +31,7 @@ try {
             }
 
             $objResponse = new AjaxResponse();
-            $objResponse->script('stoploading();');
+            //$objResponse->script('stoploading();');
             
             if ($function == 'index') {
                 throw new CustomException('Nombre de la función inválido.');
@@ -44,7 +44,7 @@ try {
             eval($func);
 
             if (!FrontController::config('production') && $function != 'debugbar') {
-                $objResponse->script('loaddebugbar("' . FrontController::$debugpath  . '/' . FrontController::$mtime . '");');
+                //$objResponse->script('loaddebugbar("' . FrontController::$debugpath  . '/' . FrontController::$mtime . '");');
             }
         } catch (\Exception $e) {
             $objResponse->script('error("'.addslashes(str_replace("\n", "", nl2br($e->getMessage()))).'");');

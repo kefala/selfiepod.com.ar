@@ -132,13 +132,13 @@
 					<div class="box container 75%">
 
 					<!-- Contact Form -->
-							<form method="post" action="javascript:void(0)">
+							<form method="post"  id="formContact" action="javascript:void(0)">
 								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Nombre" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+									<div class="6u 12u(mobile)"><input type="text" name="name" id="name" placeholder="Nombre" required/></div>
+									<div class="6u 12u(mobile)"><input type="email" name="email" id="email" placeholder="Email" required/></div>
 								</div>
 								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Mensaje" rows="6"></textarea></div>
+									<div class="12u"><textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea></div>
 								</div>
 								<div class="row">
 									<div class="12u">
