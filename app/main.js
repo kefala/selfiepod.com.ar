@@ -10,8 +10,49 @@ $(document).ready(function(){
 		f('sendForm', parameters);
 	});
 });
-
 function f(funcion, parameters, notloading) {
+    if (!notloading) loading();
+    parameters = $.extend({}, parameters);
+
+    $.ajax({
+        type: 'POST',
+        data: (parameters),
+        cache: false,
+        dataType: "json",
+        success: processAjax,
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("AJAX_URL", $(location).attr('href'));
+            xhr.setRequestHeader("AJAX_FUNCTION", funcion);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log('Ajax error: ' + jqXHR.responseText);
+        }
+    });
+}
+
+
+var delete_cookie = function(name) {
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+};
+
+
+function error(errorMsg) {
+    $('#dlgErrorMsg').html(errorMsg);
+    $("#dlgError").dialog("open");
+}
+function success(msg) {
+    $('#dlgSuccessMsg').html(msg);
+    $("#dlgSuccess").dialog("open");
+}
+function loading() {
+    if ($('#loading').css('display') == 'none') $("#loading").animate({width:'toggle'},350);
+}
+function stoploading() {
+    $('#loading').stop(true,true).hide();
+    $('button.disabled').removeClass('disabled');
+}
+function f(funcion, parameters, notloading) {
+    if (!notloading) loading();
     parameters = $.extend({}, parameters);
 
     $.ajax({
@@ -31,6 +72,7 @@ function f(funcion, parameters, notloading) {
 }
 
 function fUrl(url, funcion, parameters, notloading) {
+    if (!notloading) loading();
     parameters = $.extend({}, parameters);
 
     if (!window.location.origin)

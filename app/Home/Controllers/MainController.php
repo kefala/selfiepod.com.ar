@@ -53,7 +53,7 @@ class MainController extends \Sarasa\Models\MainController
         //direcciones que recibián copia 
         $headers .= "Cc: maria@desarrolloweb.com\r\n"; 
         */
-
+        $objResponse->log("Sarasa");
 
         mail($destinatario,$asunto,$cuerpo,$headers);
 
