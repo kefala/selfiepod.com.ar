@@ -18,7 +18,7 @@ class MainController extends \Sarasa\Models\MainController
     {
 
         
-        $destinatario =  "matin.g.lobo@gmail.com" ; 
+        $destinatario =  "martin.g.lobo@gmail.com" ; 
         $asunto = "Contacto vía Web"; 
         $cuerpo = ' 
         <html lang="es"> 
@@ -58,6 +58,5 @@ class MainController extends \Sarasa\Models\MainController
         mail($destinatario,$asunto,$cuerpo,$headers);
 
     }
-    
 
 }
