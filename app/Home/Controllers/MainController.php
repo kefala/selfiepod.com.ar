@@ -55,7 +55,7 @@ class MainController extends \Sarasa\Models\MainController
         */
         $objResponse->log("Sarasa");
 
-        mail($destinatario,$asunto,$cuerpo,$headers);
+       // mail($destinatario,$asunto,$cuerpo,$headers);
 
     }
     
