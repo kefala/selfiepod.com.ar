@@ -3,7 +3,6 @@
 namespace Home\Controllers;
 
 use Sarasa\Models\Template;
-use Sarasa\Models\MainController;
 
 class MainController extends \Sarasa\Models\MainController
 {
