@@ -16,18 +16,16 @@ class MainController extends \Sarasa\Models\MainController
     }
     public function sendForm(&$objResponse, $parameters)
     {
-
-        
         $destinatario =  "martin.g.lobo@gmail.com" ; 
         $asunto = "Contacto vía Web"; 
         $cuerpo = ' 
         <html lang="es"> 
         <head> 
             <meta http-equiv="Content-Type" content="text/html"; charset=UTF-8" />
-           <title>Full Apple Service | Contacto</title> 
+           <title>SelfiePod | Contacto</title> 
         </head> 
         <body> 
-        <h3>Full Apple Service</h3> 
+        <h3>SelfiePod</h3> 
         <p> 
             Nombre: ' . $parameters['name'] . ' <br/>
             Correo: ' . strip_tags($parameters['email']) . ' <br/>
@@ -53,10 +51,8 @@ class MainController extends \Sarasa\Models\MainController
         //direcciones que recibián copia 
         $headers .= "Cc: maria@desarrolloweb.com\r\n"; 
         */
-        $objResponse->log("Sarasa");
 
         mail($destinatario,$asunto,$cuerpo,$headers);
-
     }
 
 }
