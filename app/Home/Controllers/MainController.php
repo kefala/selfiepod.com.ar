@@ -16,7 +16,7 @@ class MainController extends \Sarasa\Models\MainController
     }
     public function sendForm(&$objResponse, $parameters)
     {
-        $destinatario =  "martin.g.lobo@gmail.com" ; 
+        $destinatario =  "info@selfiepod.com.ar" ; 
         $asunto = "Contacto vía Web"; 
         $cuerpo = ' 
         <html lang="es"> 
