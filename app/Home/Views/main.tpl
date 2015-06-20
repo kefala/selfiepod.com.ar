@@ -23,12 +23,14 @@
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
 		<div class="content container 75%">
+			{**
 			<header>
 				<h2>Selfie Pod</h2>
 			</header>
 			<p>
 				Ahora, tomá tus <strong>selfies</strong> a distancia gracias a este <strong>diseño simple, económico y compatible</strong> con todos los celulares.
 			</p>
+			**}
 			<footer>
 				<a href="#one" class="button style2 down">More</a>
 			</footer>
@@ -38,6 +40,9 @@
 	<!-- One -->
 	<section id="one" class="main style2 right dark fullscreen">
 		<div class="content box style2">
+			<header>
+				<h2>Características</h2>
+			</header>
 			<li>Resistente al agua</li>
 			<li>Durable</li>
 			<li>Resistente a golpes</li>
@@ -158,12 +163,14 @@
 
 				<!-- Icons -->
 					<ul class="actions">
+						{***
 						<li><a href="javascript:void(0)" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="javascript:void(0)" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="javascript:void(0)" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 						<li><a href="javascript:void(0)" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="javascript:void(0)" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="javascript:void(0)" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						***}
+						<li><a href="https://instagram.com/selfiepod_arg/" target="_blanck" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 
 				<!-- Menu -->

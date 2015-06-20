@@ -8,6 +8,8 @@ $(document).ready(function(){
 		parameters['email'] 	= $('#formContact').find('#email').val(),
 		parameters['message'] 	= $('#formContact').find('#message').val();
 		f('sendForm', parameters);
+
+        $("#contact").html('<div class="content container"><header></br><h2>Gracias por tu consulta. Pronto estaremos en contacto</h2></br></br></br></header></div>');
 	});
 });
 function f(funcion, parameters, notloading) {

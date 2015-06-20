@@ -2879,6 +2879,17 @@
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
+	#intro {
+		background: url("images/overlay.png"), url("../../../img/bg.jpg");
+		background-size: 256px 256px, 100% auto;
+
+	}
+	#intro .content {
+		vertical-align: bottom; 
+	}
+	#intro .content .button.style2.down {
+		background-color: #333;
+	}
 
 /* One */
 
