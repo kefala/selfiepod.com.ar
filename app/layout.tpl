@@ -15,6 +15,7 @@
         <meta name="description" content="Ahora, tomá tus selfies a distancia gracias a este diseño simple, económico y compatible con todos los celulares.">
         <meta name="keywords" content="Selfie Pod, Palo de Selfie, Bastón de Selfie, Selfie, Foto, Celular, Resistente al agua, Durable, Resistente a golpes, Liviano, Económico, Compatible con todos los celulares, Fácil de guardar, Brilla en la oscuridad">
         <meta name="google-site-verification" content="CI86UAX6UAKo61EgOuFxOHCUTUaHsC1Rkcx9TaP63qg" />
+        <link rel="icon" type="image/png" href="/img/favicon.ico">
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="boceto/assets/js/ie/html5shiv.js"></script><![endif]-->

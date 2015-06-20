@@ -5,7 +5,7 @@
 	<!-- Header -->
 	<header id="header">
 		<!-- Logo -->
-		<h1 id="logo">Selfie Pod</h1>
+		<div id="logo"><img src="/img/logo.jpg" alt=""></div>
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
