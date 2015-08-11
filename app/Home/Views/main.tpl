@@ -36,6 +36,31 @@
 			</footer>
 		</div>
 	</section>
+	<section id="sliderOne" class="main dark fullscreen">
+		<div class="content slider">
+			<div class="arrow left"><</div>
+			<div class="arrow right">></div>
+			<div class="item">
+				<img src="http://selfiepod.com.ar/img/sliders/01.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/02.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/03.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/04.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/05.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/06.jpg" alt="">
+			</div>
+		</div>
+		<a href="#one" class="button style2 down anchored">Next</a>
+	</section>
 
 	<!-- One -->
 	<section id="one" class="main style2 right dark fullscreen">
