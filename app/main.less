@@ -13,27 +13,33 @@
 		.arrow {
 			width: 7%;
 			text-align: center;
-			height: 100px;
-			background-color: #000;
+			height: 100%;
+			padding-top: 40%;
 			position: absolute;
-		    padding-top: 38%;
-		    padding-bottom: 40%;
 		    font-weight: 700;
-		    font-size: 30px;
+		    font-size: 25px;
 			z-index: 101;
 			&:hover {
 				opacity: 0.5;
+				cursor: pointer;
 			}
 			&.left {
-				padding-left: 5px;
+				background: -webkit-linear-gradient(left, #000 -26%, transparent 100%);
+				background: -o-linear-gradient(left, #000 -26%, transparent 100%);
+				background: linear-gradient(to right, #000 -26%, transparent 100%);
+				padding-left: 3px;
 				left: 0px;
 			}
 			&.right {
-				padding-right: 5px;
+				background: -webkit-linear-gradient(right, #000 -26%, transparent 100%);
+				background: -o-linear-gradient(right, #000 -26%, transparent 100%);
+				background: linear-gradient(to left, #000 -26%, transparent 100%);
+				padding-right: 3px;
 				right: 0px;
 			}
 		}
 		.item {
+			padding: 20px 0px;
 			overflow: hidden;
 			width: 100%;
 			text-align: center;
@@ -47,5 +53,8 @@
 				max-width: 86%;
 			}
 		}
+	}
+	.button.style2.down {
+		z-index: 103;
 	}
 }
