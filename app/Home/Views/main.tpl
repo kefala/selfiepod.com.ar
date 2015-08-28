@@ -111,7 +111,7 @@
 				<h2>Ventas corporativas</h2>
 			</header>
 			<p>
-				Selfiepod® es el único producto del rubro de los 'selfie sticks' de producción Nacional. Nuestra matricería produce 2.500 unidades diarias. Es totalmente personalizable, con colores y logo de la empresa. <br>
+				Selfiepod® es el único producto del rubro de los 'selfie sticks' de producción Nacional. Nuestra matricería produce 3.500 unidades diarias. Es totalmente personalizable, con colores y logo de la empresa. <br>
 				Por su bajo costo, puede ser utilizado como un elemento de merchandising, generando presencia marcaria gracias a la popularidad actual de las selfies.
 			</p>
 		</div>
@@ -126,8 +126,9 @@
 			</header>
 			<p>
 				Somos jóvenes estudiantes que nos une la pasión por crear y emprender.  <br>
+				Nuestros estudios y experiencia: <br>
 				<strong>Tomás Chernoff</strong>: <i>Ingeniería y Desarrollo.</i> <br>
-				Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones. <br>
+				Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones.  <br>
 				<strong>Tomás Iakub:</strong> <i>Comercialización y Marketing.</i> <br>
 				Estudiante de Economía Empresarial en la Universidad Torcuato Di Tella.
 			</p>
