@@ -127,10 +127,8 @@
 			<p>
 				Somos jóvenes estudiantes que nos une la pasión por crear y emprender.  <br>
 				Nuestros estudios y experiencia: <br>
-				<strong>Tomás Chernoff</strong>: <i>Ingeniería y Desarrollo.</i> <br>
-				Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones.  <br>
-				<strong>Tomás Iakub:</strong> <i>Comercialización y Marketing.</i> <br>
-				Estudiante de Economía Empresarial en la Universidad Torcuato Di Tella.
+				<li>Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones.</li>
+				<li>Estudiante de Economía Empresarial en la Universidad Torcuato Di Tella.</li>
 			</p>
 		</div>
 		<a href="#last" class="button style2 down anchored">Next</a>
