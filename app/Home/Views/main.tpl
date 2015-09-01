@@ -125,9 +125,9 @@
 				<h2>Quiénes somos?</h2>
 			</header>
 			<p>
-				Somos jóvenes estudiantes que nos une la pasión por crear y emprender.  <br>
-				Nuestros estudios y experiencia: <br>
-				<li>Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones.</li>
+				Somos jóvenes estudiantes que nos une la pasión por crear y emprender. <br>
+				Nuestros estudios y experiencia:
+				<li>Estudiante de Ingeniería en la UADE, emprendió diversos negocios relacionados con la tecnología. Fundador de Che3d y T-Copters, empresas dedicadas a las Impresoras 3D y filmación aérea con drones. </li>
 				<li>Estudiante de Economía Empresarial en la Universidad Torcuato Di Tella.</li>
 			</p>
 		</div>
