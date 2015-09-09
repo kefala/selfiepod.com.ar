@@ -3,6 +3,11 @@
 $(document).ready(function(){
     app.slider.init($("#sliderOne .content.slider .item"), $("#sliderOne .content.slider .arrow.left"), $("#sliderOne .content.slider .arrow.right"), null, null);
 
+    setTimeout(function(){
+        console.log("Seras");
+        app.slider.init($("#sliderSecond .content.slider .item"), $("#sliderSecond .content.slider .arrow.left"), $("#sliderSecond .content.slider .arrow.right"), null, null);
+    },5000);
+
 	$('#formContact').submit(function(){
 		var parameters 			= [];
 		parameters['name'] 		= $('#formContact').find('#name').val(),

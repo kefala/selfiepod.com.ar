@@ -148,6 +148,26 @@
 			</footer>
 		</div>
 	</section>
+	
+	<section id="sliderSecond" class="main dark fullscreen">
+		<div class="content slider">
+			<div class="arrow left"><</div>
+			<div class="arrow right">></div>
+			<div class="item">
+				<img src="http://selfiepod.com.ar/img/sliders/2-1.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/2-2.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/2-3.jpg" alt="">
+			</div>
+			<div class="item hide">
+				<img src="http://selfiepod.com.ar/img/sliders/2-4.jpg" alt="">
+			</div>
+		</div>
+		<a href="#one" class="button style2 down anchored">Next</a>
+	</section>
 
 	<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
