@@ -56,7 +56,7 @@
 				<img src="http://selfiepod.com.ar/img/sliders/1-10.jpg" alt="">
 			</div>
 			<div class="item hide">
-				<img src="http://selfiepod.com.ar/img/sliders/06.jpg" alt="">
+				<img src="http://selfiepod.com.ar/img/sliders/1-11.jpg" alt="">
 			</div>
 		</div>
 		<a href="#one" class="button style2 down anchored">Next</a>
