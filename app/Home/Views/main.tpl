@@ -144,7 +144,7 @@
 				Por nuestros principios de <strong>responsabilidad social</strong>, estamos orgullosos de colaborar con la <a target="_blanck" href="http://www.fundacionsteps.org.ar/">Fundación Steps</a> (quienes brindan oportunidades educativas y laborales para personas con discapacidad intelectual) incorporándolos en una etapa del proceso de producción.
 			</p>
 			<footer>
-				<a href="#contact" class="button style2 down">More</a>
+				<a href="#sliderSecond" class="button style2 down">More</a>
 			</footer>
 		</div>
 	</section>
@@ -166,7 +166,7 @@
 				<img src="http://selfiepod.com.ar/img/sliders/2-4.jpg" alt="">
 			</div>
 		</div>
-		<a href="#one" class="button style2 down anchored">Next</a>
+		<a href="#contact" class="button style2 down anchored">Next</a>
 	</section>
 
 	<!-- Contact -->
