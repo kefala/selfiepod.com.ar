@@ -216,7 +216,9 @@
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>Copyright Selfiepod&copy; 2015</li>
+						<li>Ladines 3035 Villa Pueyredon</li>
+						<li>+54 11 4572 2442 (Oficina)</li>
+						<li>Copyright Selfiepod&copy; 2016</li>
 						<!-- 
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						-->
